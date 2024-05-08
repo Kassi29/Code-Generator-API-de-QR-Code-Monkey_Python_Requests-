@@ -222,7 +222,7 @@ if logo_option.lower() == "si":
     option_logo = int(input("Elige un logo (1, 2, 3, 4): "))
     adjusted_option = option_logo - 1 
     if 0 <= adjusted_option < len(nombres_archivos):
-        files = {'file': open(f'C:/Users/Kasssssssssss/Desktop/Code Generatots(API de QR Code Monkey_Python_Requests)/logo/{nombres_archivos[adjusted_option]}', 'rb')}
+        files = {'file': open(f'C:/Users/Kasssssssssss/Desktop/Code Generator(API de QR Code Monkey_Python_Requests)/logo/{nombres_archivos[adjusted_option]}', 'rb')}
         response = requests.post(url2, files=files)
         logo = response.json()['file']
     else:
